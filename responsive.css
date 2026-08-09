@@ -1,0 +1,248 @@
+/* ============================================================
+   VISIONFORGE AI - RESPONSIVE STYLES
+   ============================================================ */
+
+/* ===== TABLETS & SMALL LAPTOPS ===== */
+@media (max-width: 1024px) {
+  .topbar {
+    padding: 0 20px;
+  }
+  .content {
+    padding: 20px 24px 28px;
+  }
+  .search-wrap {
+    max-width: 200px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 280px;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .main-wrap {
+    margin-left: 0;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  .search-wrap {
+    max-width: 140px;
+  }
+  
+  .search-wrap input {
+    font-size: 13px;
+  }
+  
+  .content {
+    padding: 16px 16px 24px;
+  }
+  
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .hero-sub {
+    font-size: 14px;
+  }
+  
+  .prompt-box {
+    padding: 16px;
+  }
+  
+  .prompt-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .mode-tabs {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .toolbar-actions {
+    margin-left: 0;
+    justify-content: center;
+  }
+  
+  .mode-tab {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  
+  .settings-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px;
+  }
+  
+  .result-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .result-buttons {
+    justify-content: center;
+  }
+  
+  .result-buttons .btn-outline {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  
+  .topbar-right .icon-btn {
+    font-size: 16px;
+    padding: 6px;
+  }
+  
+  .toast-container {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+  }
+  
+  .toast {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+  .topbar {
+    padding: 0 12px;
+    height: 56px;
+  }
+  
+  .search-wrap {
+    max-width: 100px;
+  }
+  
+  .search-wrap input {
+    font-size: 12px;
+    padding: 4px 0;
+  }
+  
+  .content {
+    padding: 12px 12px 20px;
+  }
+  
+  .hero-title {
+    font-size: 22px;
+  }
+  
+  .prompt-textarea {
+    font-size: 14px;
+    min-height: 80px;
+    padding: 12px;
+  }
+  
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .gallery-card img {
+    height: 140px;
+  }
+  
+  .gallery-card .card-body h4 {
+    font-size: 12px;
+  }
+  
+  .modal-card {
+    padding: 20px;
+  }
+  
+  .result-preview {
+    padding: 12px;
+    min-height: 150px;
+  }
+  
+  .result-preview img {
+    max-height: 300px;
+  }
+  
+  .result-meta {
+    font-size: 12px;
+    gap: 12px;
+  }
+  
+  .btn-primary {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+  
+  .btn-outline {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  
+  .settings-actions {
+    flex-direction: column;
+  }
+  
+  .settings-actions .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ===== VERY SMALL PHONES ===== */
+@media (max-width: 360px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mode-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .mode-tab {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+  
+  .topbar-right {
+    gap: 6px;
+  }
+  
+  .topbar-right .icon-btn {
+    font-size: 14px;
+    padding: 4px;
+  }
+}
+
+/* ===== LANDSCAPE MODE ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+  .sidebar {
+    overflow-y: auto;
+  }
+  
+  .content {
+    padding-top: 12px;
+  }
+  
+  .hero-title {
+    font-size: 24px;
+  }
+  
+  .prompt-textarea {
+    min-height: 60px;
+  }
+}
